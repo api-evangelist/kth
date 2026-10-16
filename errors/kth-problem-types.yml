@@ -1,0 +1,37 @@
+generated: '2026-10-16'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/_original/kth-swagger-openapi.json
+format: custom
+envelope:
+  media_type: null
+  schema: null
+coverage:
+  operations: 3
+  statuses_declared: 4
+problems:
+- status: 400
+  title: Bad Request
+  description: Invalid request
+  operations: 1
+  media_types: []
+  schema: null
+- status: 401
+  title: Unauthorized
+  description: This endpoint is secured - **credentials are missing or invalid**.
+  operations: 3
+  media_types: []
+  schema: null
+- status: 404
+  title: Not Found
+  description: No data found for given ID
+  operations: 1
+  media_types: []
+  schema: null
+- status: default
+  title: null
+  description: Unexpected response - internal error
+  operations: 3
+  media_types: []
+  schema: null

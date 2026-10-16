@@ -1,0 +1,256 @@
+generated: '2026-10-15'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/KTH
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (kth.se, security/kth-domain-security.yml,
+  security/kth-vulnerability-disclosure.yml) or its accepted GitHub org (KTH).'
+packages:
+- name: kth-node-redis
+  registry: github
+  url: https://github.com/KTH/kth-node-redis
+  language: TypeScript
+  official: true
+  version: null
+  published: '2026-10-15'
+  source_repo: https://github.com/KTH/kth-node-redis
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: node-api
+  registry: github
+  url: https://github.com/KTH/node-api
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-15'
+  source_repo: https://github.com/KTH/node-api
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-server
+  registry: github
+  url: https://github.com/KTH/kth-node-server
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-13'
+  source_repo: https://github.com/KTH/kth-node-server
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-response
+  registry: github
+  url: https://github.com/KTH/kth-node-response
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-12'
+  source_repo: https://github.com/KTH/kth-node-response
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-web-common
+  registry: github
+  url: https://github.com/KTH/kth-node-web-common
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-12'
+  source_repo: https://github.com/KTH/kth-node-web-common
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-access-log
+  registry: github
+  url: https://github.com/KTH/kth-node-access-log
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-12'
+  source_repo: https://github.com/KTH/kth-node-access-log
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-configuration
+  registry: github
+  url: https://github.com/KTH/kth-node-configuration
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-12'
+  source_repo: https://github.com/KTH/kth-node-configuration
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-api-common
+  registry: github
+  url: https://github.com/KTH/kth-node-api-common
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-12'
+  source_repo: https://github.com/KTH/kth-node-api-common
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-publications-formatters
+  registry: github
+  url: https://github.com/KTH/kth-node-publications-formatters
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-04'
+  source_repo: https://github.com/KTH/kth-node-publications-formatters
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-appinsights
+  registry: github
+  url: https://github.com/KTH/kth-node-appinsights
+  language: TypeScript
+  official: true
+  version: null
+  published: '2026-10-01'
+  source_repo: https://github.com/KTH/kth-node-appinsights
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-api-key-strategy
+  registry: github
+  url: https://github.com/KTH/kth-node-api-key-strategy
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-01'
+  source_repo: https://github.com/KTH/kth-node-api-key-strategy
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-i18n
+  registry: github
+  url: https://github.com/KTH/kth-node-i18n
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-10-01'
+  source_repo: https://github.com/KTH/kth-node-i18n
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: canvas-api
+  registry: github
+  url: https://github.com/KTH/canvas-api
+  language: TypeScript
+  official: true
+  version: null
+  published: '2026-09-24'
+  source_repo: https://github.com/KTH/canvas-api
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-express-routing
+  registry: github
+  url: https://github.com/KTH/kth-node-express-routing
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-09-13'
+  source_repo: https://github.com/KTH/kth-node-express-routing
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-mongo
+  registry: github
+  url: https://github.com/KTH/kth-node-mongo
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-09-13'
+  source_repo: https://github.com/KTH/kth-node-mongo
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-ldap
+  registry: github
+  url: https://github.com/KTH/kth-node-ldap
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-08-20'
+  source_repo: https://github.com/KTH/kth-node-ldap
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-log
+  registry: github
+  url: https://github.com/KTH/kth-node-log
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-07-16'
+  source_repo: https://github.com/KTH/kth-node-log
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-session
+  registry: github
+  url: https://github.com/KTH/kth-node-session
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-06-01'
+  source_repo: https://github.com/KTH/kth-node-session
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-api-call
+  registry: github
+  url: https://github.com/KTH/kth-node-api-call
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-05-23'
+  source_repo: https://github.com/KTH/kth-node-api-call
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-monitor
+  registry: github
+  url: https://github.com/KTH/kth-node-monitor
+  language: TypeScript
+  official: true
+  version: null
+  published: '2026-05-20'
+  source_repo: https://github.com/KTH/kth-node-monitor
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-passport-oidc
+  registry: github
+  url: https://github.com/KTH/kth-node-passport-oidc
+  language: JavaScript
+  official: true
+  version: null
+  published: '2026-05-19'
+  source_repo: https://github.com/KTH/kth-node-passport-oidc
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-cortina-block
+  registry: github
+  url: https://github.com/KTH/kth-node-cortina-block
+  language: TypeScript
+  official: true
+  version: null
+  published: '2026-05-01'
+  source_repo: https://github.com/KTH/kth-node-cortina-block
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-nodejs-18
+  registry: github
+  url: https://github.com/KTH/kth-nodejs-18
+  language: Shell
+  official: true
+  version: null
+  published: '2026-01-22'
+  source_repo: https://github.com/KTH/kth-nodejs-18
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-node-backend
+  registry: github
+  url: https://github.com/KTH/kth-node-backend
+  language: Shell
+  official: true
+  version: null
+  published: '2025-01-03'
+  source_repo: https://github.com/KTH/kth-node-backend
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth-python-3.10
+  registry: github
+  url: https://github.com/KTH/kth-python-3.10
+  language: Shell
+  official: true
+  version: null
+  published: '2023-09-14'
+  source_repo: https://github.com/KTH/kth-python-3.10
+  evidence: repository in github.com/KTH, whose profile names the provider's domain
+- name: kth
+  registry: npm
+  url: https://www.npmjs.com/package/kth
+  language: JavaScript
+  official: false
+  version: 1.0.0
+  published: '2019-06-22'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
+- name: kth
+  registry: pypi
+  url: https://pypi.org/project/kth/
+  language: Python
+  official: false
+  version: 0.8.0
+  published: '2022-11-04'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
+- name: kth
+  registry: crates
+  url: https://crates.io/crates/kth
+  language: Rust
+  official: false
+  version: 0.1.0
+  published: '2017-05-29'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'

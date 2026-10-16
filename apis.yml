@@ -1,23 +1,99 @@
 aid: kth
 name: KTH Royal Institute of Technology
-description: 'KTH Royal Institute of Technology is a company surfaced via the API Evangelist harvest backlog
-  (source: stockholm-trip) and added to the network as a stub for full-pipeline profiling.'
+image: https://intra.kth.se/polopoly_fs/1.858858!/image/KTH_Logotyp_RGB_2013.png
+description: KTH Royal Institute of Technology (KTH) is Sweden's largest technical university, located in Stockholm. It offers a broad range of
+  engineering and technology education, conducts cutting‑edge research, and collaborates with industry and international partners. KTH provides
+  various digital services and APIs for students, researchers, and partners, supporting open data, learning platforms, and research infrastructure.
+  The university is committed to sustainability, innovation, and societal impact through its extensive academic and research programs.
 url: https://raw.githubusercontent.com/api-evangelist/kth/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:stockholm-trip
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-15 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-15'
 modified: '2026-10-15'
 tags:
 - Company
-apis: []
+- Education
+- Research
+- Sweden
+- Technology
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Spectral
+  url: rules/kth-rules.yml
+- type: DataModel
+  url: data-model/kth-data-model.yml
+- type: ErrorCatalog
+  url: errors/kth-problem-types.yml
+- type: SecurityTxt
+  url: well-known/kth-www-security.txt
+- type: Security
+  url: security/kth-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/kth-conformance.yml
+- type: SecurityTxt
+  url: well-known/kth-security.txt
+- type: SecurityTxt
+  url: well-known/kth-intra-security.txt
+- type: WellKnown
+  url: well-known/kth-well-known.yml
+- type: Hosts
+  url: hosts/kth-hosts.yml
+- type: SDKs
+  url: packages/kth-packages.yml
+- type: Packages
+  url: packages/kth-packages.yml
+- type: Newsroom
+  url: https://www.kth.se/om/kontakt/press
+- type: GitHubOrganization
+  url: https://github.com/KTH
+- type: VulnerabilityDisclosure
+  url: security/kth-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/kth-domain-security.yml
 - type: Website
   url: https://kth.se/
+apis:
+- name: Node API
+  description: Template API project for Node.js
+  humanURL: https://github.com/KTH/node-api
+  baseURL: https://kth.se/api/node
+  aid: kth:node-api
+- aid: kth:kth-royal-institute-of-technology-swagger-api
+  name: KTH Royal Institute of Technology Swagger API
+  description: Template API project for Node.js
+  humanURL: https://github.com/KTH/node-api
+  properties:
+  - type: OpenAPI
+    url: openapi/_original/kth-swagger-openapi.json
+- aid: kth:kth-royal-institute-of-technology-swagger-api
+  name: KTH Royal Institute of Technology Swagger API
+  description: Template API project for Node.js
+  humanURL: https://github.com/KTH/node-api
+  properties:
+  - type: OpenAPI
+    url: openapi/_original/kth-swagger-openapi.json
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-15'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://webmail.kth.se/api/mcp
+    status: 401
+  - url: https://kth.se/
+    status: 200
+x-enrichment:
+  date: '2026-10-15'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

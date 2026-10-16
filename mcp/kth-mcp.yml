@@ -1,0 +1,6 @@
+generated: '2026-10-15'
+method: derived
+source: openapi/kth-openapi.json
+deployment:
+  mode: none
+  verified: derived

@@ -1,0 +1,9 @@
+generated: '2026-10-16'
+method: probed
+generator: harvest-sibling-contracts.py
+source: https://raw.githubusercontent.com/KTH/node-api/main/swagger.json
+found_on: https://github.com/KTH/node-api
+operations: gh:swagger.json
+version: '2.0'
+ownership: sibling of a contract the pass accepted on the same host; URL names the
+  provider

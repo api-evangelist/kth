@@ -1,0 +1,116 @@
+openapi: 3.2.0
+info:
+  title: Node Data API
+  description: Template API project for Node.js
+  version: 1.0.0
+servers:
+- url: /api/node
+tags:
+- name: Data
+paths:
+  /v1/data/{id}:
+    get:
+      tags:
+      - Data
+      operationId: getDataById
+      summary: Data with ID
+      description: 'Returns the earlier stored data-object with the given ID.
+
+
+        _(Sample.getData)_'
+      parameters:
+      - $ref: '#/components/parameters/DataId'
+      responses:
+        '200':
+          description: The requested data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataObject'
+        '401':
+          description: This endpoint is secured - **credentials are missing or invalid**.
+        '404':
+          description: No data found for given ID
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: document not found
+        default:
+          description: Unexpected response - internal error
+      security:
+      - api_key:
+        - read
+    post:
+      tags:
+      - Data
+      operationId: postDataById
+      summary: Store data
+      description: 'Saves the given data-object, overwriting any old data with the same ID.
+
+
+        _(Sample.postData)_'
+      parameters:
+      - $ref: '#/components/parameters/DataId'
+      - $ref: '#/components/parameters/DataObject'
+      responses:
+        '200':
+          description: The stored data object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataObject'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Sample validation failed: name: Name is required.'
+        '401':
+          description: This endpoint is secured - **credentials are missing or invalid**.
+        default:
+          description: Unexpected response - internal error
+      security:
+      - api_key:
+        - write
+components:
+  schemas:
+    DataObject:
+      properties:
+        id:
+          type: string
+          example: '123'
+        name:
+          type: string
+          example: John Doe
+  parameters:
+    DataObject:
+      in: body
+      description: Data to save with given ID
+      name: data
+      required: true
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+            example: John Doe
+    DataId:
+      in: path
+      description: ID of data object, e.g. "123"
+      name: id
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header

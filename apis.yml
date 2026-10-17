@@ -65,20 +65,26 @@ apis:
   humanURL: https://github.com/KTH/node-api
   baseURL: https://kth.se/api/node
   aid: kth:node-api
-- aid: kth:kth-royal-institute-of-technology-swagger-api
-  name: KTH Royal Institute of Technology Swagger API
-  description: Template API project for Node.js
+- aid: kth:kth-data-api
+  name: KTH Royal Institute of Technology Data API
+  description: The data API from KTH Royal Institute of Technology — 1 operation(s) for data.
   humanURL: https://github.com/KTH/node-api
+  baseURL: https://kth.se/api/node
+  tags:
+  - data
   properties:
   - type: OpenAPI
-    url: openapi/_original/kth-swagger-openapi.json
-- aid: kth:kth-royal-institute-of-technology-swagger-api
-  name: KTH Royal Institute of Technology Swagger API
-  description: Template API project for Node.js
+    url: openapi/kth-data-api-openapi.yml
+- aid: kth:kth-system-api
+  name: KTH Royal Institute of Technology System API
+  description: The system API from KTH Royal Institute of Technology — 1 operation(s) for system.
   humanURL: https://github.com/KTH/node-api
+  baseURL: https://kth.se/api/node
+  tags:
+  - system
   properties:
   - type: OpenAPI
-    url: openapi/_original/kth-swagger-openapi.json
+    url: openapi/kth-system-api-openapi.yml
 x-coverage:
   state: none
   reason: no-developer-program

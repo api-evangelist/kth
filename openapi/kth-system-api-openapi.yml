@@ -1,0 +1,36 @@
+openapi: 3.2.0
+info:
+  title: Node System API
+  description: Template API project for Node.js
+  version: 1.0.0
+servers:
+- url: /api/node
+tags:
+- name: System
+paths:
+  /_checkAPIkey:
+    get:
+      tags:
+      - System
+      operationId: checkAPIkey
+      summary: Test authentication setup
+      description: 'Secured test endpoint which can be used to validate that a client has a working authentication setup
+
+
+        _(System.checkAPIKey)_'
+      responses:
+        '200':
+          description: The given authentication is **accepted**
+        '401':
+          description: This endpoint is secured - **credentials are missing or invalid**.
+        default:
+          description: Unexpected response - internal error
+      security:
+      - api_key:
+        - read
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
